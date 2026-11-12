@@ -1,4 +1,7 @@
-set(target test_stack)
-file(GLOB srcs "*.cpp")
-add_executable(${target} ${srcs})
-target_link_libraries(${target} PRIVATE gtest)
+add_executable(test_lab3_stack
+    test_main.cpp
+    test_poland.cpp
+    test_tstack.cpp
+    ../src/poland.cpp
+)
+target_link_libraries(test_lab3_stack PRIVATE gtest)
